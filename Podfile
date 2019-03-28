@@ -6,5 +6,5 @@ target 'Collectify' do
   use_frameworks!
 
   # Pods for Collectify
-
+  pod 'Alamofire'
 end

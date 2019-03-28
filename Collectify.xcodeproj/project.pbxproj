@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C9F32E10825F49B48C7D5AC /* Pods_Collectify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CF9D2A59C011916E2B390 /* Pods_Collectify.framework */; };
 		7AB327D9224D2F7E000CDFB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327D8224D2F7E000CDFB5 /* AppDelegate.swift */; };
 		7AB327DB224D2F7E000CDFB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327DA224D2F7E000CDFB5 /* ViewController.swift */; };
 		7AB327DE224D2F7E000CDFB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB327DC224D2F7E000CDFB5 /* Main.storyboard */; };
 		7AB327E1224D2F7E000CDFB5 /* Collectify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327DF224D2F7E000CDFB5 /* Collectify.xcdatamodeld */; };
 		7AB327E3224D2F81000CDFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB327E2224D2F81000CDFB5 /* Assets.xcassets */; };
 		7AB327E6224D2F81000CDFB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB327E4224D2F81000CDFB5 /* LaunchScreen.storyboard */; };
+		7AB327F1224D30F8000CDFB5 /* CustomCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327F0224D30F8000CDFB5 /* CustomCollection.swift */; };
+		7AB327F3224D3B00000CDFB5 /* CollectionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327F2224D3B00000CDFB5 /* CollectionImage.swift */; };
+		7AB6764B224D3E6700DB9ECB /* CustomCollectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6764A224D3E6700DB9ECB /* CustomCollectionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D7AB79A8308D2D50DA53221 /* Pods-Collectify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collectify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Collectify/Pods-Collectify.release.xcconfig"; sourceTree = "<group>"; };
+		3C5B324CEADC2C051A9A5BA2 /* Pods-Collectify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collectify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Collectify/Pods-Collectify.debug.xcconfig"; sourceTree = "<group>"; };
 		7AB327D5224D2F7E000CDFB5 /* Collectify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collectify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB327D8224D2F7E000CDFB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AB327DA224D2F7E000CDFB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		7AB327E2224D2F81000CDFB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AB327E5224D2F81000CDFB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AB327E7224D2F81000CDFB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AB327F0224D30F8000CDFB5 /* CustomCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollection.swift; sourceTree = "<group>"; };
+		7AB327F2224D3B00000CDFB5 /* CollectionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionImage.swift; sourceTree = "<group>"; };
+		7AB6764A224D3E6700DB9ECB /* CustomCollectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionService.swift; sourceTree = "<group>"; };
+		CE2CF9D2A59C011916E2B390 /* Pods_Collectify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collectify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9F32E10825F49B48C7D5AC /* Pods_Collectify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0215E85A82FC64215A9F2DA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE2CF9D2A59C011916E2B390 /* Pods_Collectify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F5DF955F1423A1F8E493524 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C5B324CEADC2C051A9A5BA2 /* Pods-Collectify.debug.xcconfig */,
+				0D7AB79A8308D2D50DA53221 /* Pods-Collectify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7AB327CC224D2F7D000CDFB5 = {
 			isa = PBXGroup;
 			children = (
 				7AB327D7224D2F7E000CDFB5 /* Collectify */,
 				7AB327D6224D2F7E000CDFB5 /* Products */,
+				2F5DF955F1423A1F8E493524 /* Pods */,
+				0215E85A82FC64215A9F2DA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +86,50 @@
 		7AB327D7224D2F7E000CDFB5 /* Collectify */ = {
 			isa = PBXGroup;
 			children = (
+				7AB67649224D3E5100DB9ECB /* Services */,
+				7AB327EF224D30CD000CDFB5 /* Controller */,
+				7AB327EE224D30C2000CDFB5 /* View */,
+				7AB327ED224D30BD000CDFB5 /* Model */,
 				7AB327D8224D2F7E000CDFB5 /* AppDelegate.swift */,
-				7AB327DA224D2F7E000CDFB5 /* ViewController.swift */,
-				7AB327DC224D2F7E000CDFB5 /* Main.storyboard */,
 				7AB327E2224D2F81000CDFB5 /* Assets.xcassets */,
 				7AB327E4224D2F81000CDFB5 /* LaunchScreen.storyboard */,
 				7AB327E7224D2F81000CDFB5 /* Info.plist */,
 				7AB327DF224D2F7E000CDFB5 /* Collectify.xcdatamodeld */,
 			);
 			path = Collectify;
+			sourceTree = "<group>";
+		};
+		7AB327ED224D30BD000CDFB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AB327F0224D30F8000CDFB5 /* CustomCollection.swift */,
+				7AB327F2224D3B00000CDFB5 /* CollectionImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AB327EE224D30C2000CDFB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AB327DC224D2F7E000CDFB5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AB327EF224D30CD000CDFB5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7AB327DA224D2F7E000CDFB5 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7AB67649224D3E5100DB9ECB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7AB6764A224D3E6700DB9ECB /* CustomCollectionService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AB327EA224D2F81000CDFB5 /* Build configuration list for PBXNativeTarget "Collectify" */;
 			buildPhases = (
+				66AEC0EAE6FC0151EF625F60 /* [CP] Check Pods Manifest.lock */,
 				7AB327D1224D2F7E000CDFB5 /* Sources */,
 				7AB327D2224D2F7E000CDFB5 /* Frameworks */,
 				7AB327D3224D2F7E000CDFB5 /* Resources */,
+				FD3EA0E6CA1C00F3F8FEAAD0 /* [CP] Embed Pods Frameworks */,
+				9BBE1D1B9B60874114A5CC0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +201,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		66AEC0EAE6FC0151EF625F60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Collectify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BBE1D1B9B60874114A5CC0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Collectify/Pods-Collectify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD3EA0E6CA1C00F3F8FEAAD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Collectify/Pods-Collectify-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Collectify/Pods-Collectify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7AB327D1224D2F7E000CDFB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7AB327E1224D2F7E000CDFB5 /* Collectify.xcdatamodeld in Sources */,
+				7AB327F3224D3B00000CDFB5 /* CollectionImage.swift in Sources */,
 				7AB327DB224D2F7E000CDFB5 /* ViewController.swift in Sources */,
 				7AB327D9224D2F7E000CDFB5 /* AppDelegate.swift in Sources */,
+				7AB6764B224D3E6700DB9ECB /* CustomCollectionService.swift in Sources */,
+				7AB327F1224D30F8000CDFB5 /* CustomCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +421,7 @@
 		};
 		7AB327EB224D2F81000CDFB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5B324CEADC2C051A9A5BA2 /* Pods-Collectify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +440,7 @@
 		};
 		7AB327EC224D2F81000CDFB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D7AB79A8308D2D50DA53221 /* Pods-Collectify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
