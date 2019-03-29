@@ -1,5 +1,6 @@
 # Collectify
 iOS Summer Internship Shopify Challenge
+Noah Woodward
 
 ## Screenshots
 <img src="Collection.png" width ="260" height="460"> <img src="Product.png" width ="260" height="460">
