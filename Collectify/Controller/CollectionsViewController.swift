@@ -31,6 +31,7 @@ class CollectionsViewController: UIViewController {
         super.viewDidLoad()
         setupCollectionView()
         loadData()
+        navSetup()
         // Do any additional setup after loading the view.
     }
     
@@ -62,6 +63,11 @@ class CollectionsViewController: UIViewController {
     private func transitionToNext(){
         let nextVC = ProductsViewController()
         self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    private func navSetup(){
+        self.title = "Collections"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
  
