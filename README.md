@@ -7,7 +7,7 @@ iOS Summer Internship Shopify Challenge
 ## Startup Guide
 
 ```bash
-git clone https://github.com/ShennyO/Shopify-Mobile-Developer-Intern-Challenge---Summer-2019.git
+https://github.com/woodward4422/Collectify.git
 ```
 
 ```bash
