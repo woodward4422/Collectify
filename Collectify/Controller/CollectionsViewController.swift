@@ -95,6 +95,8 @@ class CollectionsViewController: UIViewController {
 
 extension CollectionsViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        // Could have done this a shorter way with ?? but I thought this was cleaner for readability due to nested models
         if let unwrappedCollections = collections{
             return unwrappedCollections.collections.count
         } else{

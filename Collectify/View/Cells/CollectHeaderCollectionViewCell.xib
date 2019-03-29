@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectHeaderCollectionViewCell" customModule="Collectify" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerCell" id="gTV-IL-0wX" customClass="CollectHeaderCollectionViewCell" customModule="Collectify" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="462" height="205"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -41,6 +41,7 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="djq-63-DPS" secondAttribute="trailing" constant="20" id="8FI-Ug-346"/>
                             <constraint firstItem="djq-63-DPS" firstAttribute="centerX" secondItem="na9-NS-NFm" secondAttribute="centerX" id="UD3-Hk-af2"/>
                             <constraint firstItem="djq-63-DPS" firstAttribute="top" secondItem="na9-NS-NFm" secondAttribute="bottom" constant="10" id="Vc9-We-eiI"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="djq-63-DPS" secondAttribute="bottom" constant="20" id="at8-KU-RPQ"/>
                             <constraint firstItem="na9-NS-NFm" firstAttribute="centerX" secondItem="1xe-om-iGg" secondAttribute="centerX" id="ayz-bv-tZV"/>
                             <constraint firstItem="na9-NS-NFm" firstAttribute="top" secondItem="1xe-om-iGg" secondAttribute="top" constant="20" id="tEz-HI-myA"/>
                         </constraints>
@@ -55,6 +56,10 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="462" height="205"/>
+            <connections>
+                <outlet property="collectImage" destination="na9-NS-NFm" id="nRR-Nx-hMZ"/>
+                <outlet property="collectTitle" destination="djq-63-DPS" id="0U3-zs-guz"/>
+            </connections>
             <point key="canvasLocation" x="467.19999999999999" y="224.4377811094453"/>
         </collectionViewCell>
     </objects>
