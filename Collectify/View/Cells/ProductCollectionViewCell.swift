@@ -17,6 +17,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     
     @IBOutlet weak var productInventory: UILabel!
+    
     var product: Product?{
         didSet{
             setupCell()
@@ -26,9 +27,9 @@ class ProductCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
+        // This allows for the cell to adjust in size depending the size of the content inside and the constraints set for the subviews of the cell
     override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         setNeedsLayout()
         layoutIfNeeded()

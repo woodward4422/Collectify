@@ -12,13 +12,9 @@ struct CustomCollection: Codable {
     var title: String
     var id: Int
     var image: CollectionImage
+    var body: String
     
-    init(title: String,id: Int,image: CollectionImage){
-        self.title = title
-        self.id = id
-        self.image = image
-    }
-    
+
 }
 
 extension CustomCollection{
@@ -26,5 +22,6 @@ extension CustomCollection{
         case title
         case id
         case image
+        case body = "body_html"
     }
 }
