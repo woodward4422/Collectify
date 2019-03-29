@@ -8,7 +8,6 @@
 
 import Foundation
 import enum Result.Result
-import SwiftyJSON
 import Alamofire
 
 
