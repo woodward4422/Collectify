@@ -39,6 +39,7 @@ class ProductsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        navSetup()
     }
     
     
@@ -49,6 +50,11 @@ class ProductsViewController: UIViewController {
         collectionViewLayout.itemSize = UICollectionViewFlowLayout.automaticSize
         collectionViewLayout.estimatedItemSize = CGSize(width: view.frame.width, height: 100)
         
+    }
+    
+    private func navSetup(){
+        self.title = "Products"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     private func loadData(){

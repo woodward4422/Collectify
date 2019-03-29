@@ -60,13 +60,14 @@ class CollectionsViewController: UIViewController {
         }
     }
     
-    private func transitionToNext(id: String){
+    private func transitionToNext(id: String, collection: CustomCollection){
         let nextVC = ProductsViewController(service: CustomCollectionService())
         print()
         
         getCollects(id: id, completion: { (collects) in
             nextVC.collects = collects
         })
+        nextVC.collection = collection 
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
@@ -116,7 +117,7 @@ extension CollectionsViewController: UICollectionViewDelegate, UICollectionViewD
         // TODO: Present an alert for error handling here
         guard let collectionsUnwrapped = collections?.collections else { return }
         let id = String(collectionsUnwrapped[indexPath.row].id)
-        transitionToNext(id: id)
+        transitionToNext(id: id, collection: collectionsUnwrapped[indexPath.row])
         
         
     }
