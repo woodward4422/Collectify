@@ -19,6 +19,10 @@
 		7A29C1F1224DE0B20069D362 /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A29C1EF224DE0B20069D362 /* ProductsViewController.xib */; };
 		7A29C1F3224E81790069D362 /* Collect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1F2224E81790069D362 /* Collect.swift */; };
 		7A29C1F5224E90CC0069D362 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1F4224E90CC0069D362 /* Product.swift */; };
+		7A29C1F8224EBAF60069D362 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1F6224EBAF60069D362 /* ProductCollectionViewCell.swift */; };
+		7A29C1F9224EBAF60069D362 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A29C1F7224EBAF60069D362 /* ProductCollectionViewCell.xib */; };
+		7A29C1FC224EBD410069D362 /* CollectHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1FA224EBD410069D362 /* CollectHeaderCollectionViewCell.swift */; };
+		7A29C1FD224EBD410069D362 /* CollectHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A29C1FB224EBD410069D362 /* CollectHeaderCollectionViewCell.xib */; };
 		7AB327D9224D2F7E000CDFB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327D8224D2F7E000CDFB5 /* AppDelegate.swift */; };
 		7AB327E1224D2F7E000CDFB5 /* Collectify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327DF224D2F7E000CDFB5 /* Collectify.xcdatamodeld */; };
 		7AB327E3224D2F81000CDFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB327E2224D2F81000CDFB5 /* Assets.xcassets */; };
@@ -42,6 +46,10 @@
 		7A29C1EF224DE0B20069D362 /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
 		7A29C1F2224E81790069D362 /* Collect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collect.swift; sourceTree = "<group>"; };
 		7A29C1F4224E90CC0069D362 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		7A29C1F6224EBAF60069D362 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A29C1F7224EBAF60069D362 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		7A29C1FA224EBD410069D362 /* CollectHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A29C1FB224EBD410069D362 /* CollectHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		7AB327D5224D2F7E000CDFB5 /* Collectify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collectify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB327D8224D2F7E000CDFB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AB327E0224D2F7E000CDFB5 /* Collectify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Collectify.xcdatamodel; sourceTree = "<group>"; };
@@ -96,6 +104,10 @@
 			children = (
 				7A29C1EA224DB08E0069D362 /* CollectionsCollectionViewCell.swift */,
 				7A29C1EB224DB08E0069D362 /* CollectionsCollectionViewCell.xib */,
+				7A29C1F6224EBAF60069D362 /* ProductCollectionViewCell.swift */,
+				7A29C1F7224EBAF60069D362 /* ProductCollectionViewCell.xib */,
+				7A29C1FA224EBD410069D362 /* CollectHeaderCollectionViewCell.swift */,
+				7A29C1FB224EBD410069D362 /* CollectHeaderCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -238,6 +250,8 @@
 			files = (
 				7A29C1ED224DB08E0069D362 /* CollectionsCollectionViewCell.xib in Resources */,
 				7AB327E6224D2F81000CDFB5 /* LaunchScreen.storyboard in Resources */,
+				7A29C1FD224EBD410069D362 /* CollectHeaderCollectionViewCell.xib in Resources */,
+				7A29C1F9224EBAF60069D362 /* ProductCollectionViewCell.xib in Resources */,
 				7AB327E3224D2F81000CDFB5 /* Assets.xcassets in Resources */,
 				7A29C1E8224DAD490069D362 /* CollectionsViewController.xib in Resources */,
 				7A29C1F1224DE0B20069D362 /* ProductsViewController.xib in Resources */,
@@ -325,12 +339,14 @@
 			files = (
 				7A29C1E7224DAD490069D362 /* CollectionsViewController.swift in Sources */,
 				7AB327E1224D2F7E000CDFB5 /* Collectify.xcdatamodeld in Sources */,
+				7A29C1F8224EBAF60069D362 /* ProductCollectionViewCell.swift in Sources */,
 				7A29C1EC224DB08E0069D362 /* CollectionsCollectionViewCell.swift in Sources */,
 				7AB327F3224D3B00000CDFB5 /* CollectionImage.swift in Sources */,
 				7A29C1F0224DE0B20069D362 /* ProductsViewController.swift in Sources */,
 				7A29C1C3224DA5010069D362 /* CustomCollections.swift in Sources */,
 				7AB327D9224D2F7E000CDFB5 /* AppDelegate.swift in Sources */,
 				7AB6764B224D3E6700DB9ECB /* CustomCollectionService.swift in Sources */,
+				7A29C1FC224EBD410069D362 /* CollectHeaderCollectionViewCell.swift in Sources */,
 				7A29C1BE224D74BB0069D362 /* APIError.swift in Sources */,
 				7A29C1BC224D73690069D362 /* Route.swift in Sources */,
 				7A29C1F3224E81790069D362 /* Collect.swift in Sources */,

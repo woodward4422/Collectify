@@ -30,7 +30,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collection Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oeu-DB-O67">
-                                <rect key="frame" x="130" y="55" width="201" height="24"/>
+                                <rect key="frame" x="130" y="55" width="137.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -42,7 +42,7 @@
                             <constraint firstItem="0Q4-Z6-Y7G" firstAttribute="centerY" secondItem="SsM-7D-Gf0" secondAttribute="centerY" id="Jiq-Fi-wJB"/>
                             <constraint firstItem="Oeu-DB-O67" firstAttribute="leading" secondItem="0Q4-Z6-Y7G" secondAttribute="trailing" constant="10" id="Spq-3v-1lK"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0Q4-Z6-Y7G" secondAttribute="bottom" constant="10" id="cvg-fN-d9o"/>
-                            <constraint firstAttribute="trailing" secondItem="Oeu-DB-O67" secondAttribute="trailing" constant="20" id="leZ-9U-ZY9"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Oeu-DB-O67" secondAttribute="trailing" constant="20" id="leZ-9U-ZY9"/>
                             <constraint firstItem="0Q4-Z6-Y7G" firstAttribute="leading" secondItem="SsM-7D-Gf0" secondAttribute="leading" constant="20" id="tht-7K-s0f"/>
                         </constraints>
                     </view>
