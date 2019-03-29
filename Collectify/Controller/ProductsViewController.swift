@@ -44,9 +44,9 @@ class ProductsViewController: UIViewController {
                 switch result{
                 case .success(let loadedProducts):
                     self.products = loadedProducts
+                    print("Products \(self.products)")
                 case .failure(let error):
                     print("Error getting the products")
-                    
                 }
             }
         }

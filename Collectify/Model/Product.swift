@@ -27,6 +27,7 @@ struct Product: Codable{
     }
     
     func getVariantCount() -> Int{
+        // Reduce all of the variants inventories so that we can get a total count for the
        let count = self.variants.reduce(0,{ (result: Int, variant) -> Int in
             result + variant.count
         }) ?? 0
