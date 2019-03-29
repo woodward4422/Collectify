@@ -10,14 +10,15 @@ import Foundation
 
 struct CustomCollection: Codable {
     var title: String
-    var id: String
+    var id: Int
     var image: CollectionImage
     
-    init(title: String,id: String,image: CollectionImage){
+    init(title: String,id: Int,image: CollectionImage){
         self.title = title
         self.id = id
         self.image = image
     }
+    
 }
 
 extension CustomCollection{

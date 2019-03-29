@@ -9,5 +9,5 @@ target 'Collectify' do
   pod 'Result'
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 5.0.0-beta.3'
-
+  pod 'Kingfisher'
 end

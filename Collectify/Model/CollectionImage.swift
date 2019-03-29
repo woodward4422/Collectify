@@ -16,6 +16,8 @@ struct CollectionImage: Codable{
         self.image = image
     }
     
+    
+    
 }
 
 extension CollectionImage{

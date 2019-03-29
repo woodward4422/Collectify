@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="gTV-IL-0wX" customClass="CollectionsCollectionViewCell" customModule="Collectify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SsM-7D-Gf0">
+                        <rect key="frame" x="0.0" y="0.0" width="351" height="210"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Q4-Z6-Y7G">
+                                <rect key="frame" x="20" y="55" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3lr-8I-awZ"/>
+                                    <constraint firstAttribute="width" constant="100" id="zqr-zF-Adr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collection Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oeu-DB-O67">
+                                <rect key="frame" x="130" y="55" width="201" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58823529411764708" green="0.74901960784313726" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oeu-DB-O67" firstAttribute="top" secondItem="0Q4-Z6-Y7G" secondAttribute="top" id="H93-gv-RZC"/>
+                            <constraint firstItem="0Q4-Z6-Y7G" firstAttribute="centerY" secondItem="SsM-7D-Gf0" secondAttribute="centerY" id="Jiq-Fi-wJB"/>
+                            <constraint firstItem="Oeu-DB-O67" firstAttribute="leading" secondItem="0Q4-Z6-Y7G" secondAttribute="trailing" constant="10" id="Spq-3v-1lK"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0Q4-Z6-Y7G" secondAttribute="bottom" constant="10" id="cvg-fN-d9o"/>
+                            <constraint firstAttribute="trailing" secondItem="Oeu-DB-O67" secondAttribute="trailing" constant="20" id="leZ-9U-ZY9"/>
+                            <constraint firstItem="0Q4-Z6-Y7G" firstAttribute="leading" secondItem="SsM-7D-Gf0" secondAttribute="leading" constant="20" id="tht-7K-s0f"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SsM-7D-Gf0" secondAttribute="bottom" id="93p-HD-Qjt"/>
+                <constraint firstItem="SsM-7D-Gf0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="G1E-Jl-gJv"/>
+                <constraint firstItem="SsM-7D-Gf0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MrA-D6-0yk"/>
+                <constraint firstAttribute="trailing" secondItem="SsM-7D-Gf0" secondAttribute="trailing" id="lMX-1H-6aP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="351" height="210"/>
+            <connections>
+                <outlet property="collectionImage" destination="0Q4-Z6-Y7G" id="sw5-re-60Q"/>
+                <outlet property="collectionTitle" destination="Oeu-DB-O67" id="3ad-p0-EpP"/>
+            </connections>
+            <point key="canvasLocation" x="378.39999999999998" y="100.74962518740631"/>
+        </collectionViewCell>
+    </objects>
+</document>

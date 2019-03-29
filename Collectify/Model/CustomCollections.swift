@@ -14,10 +14,15 @@ struct CustomCollections: Codable {
     init(collections: [CustomCollection]){
         self.collections = collections
     }
+    
+
+
 }
+
 
 extension CustomCollections {
     enum CodingKeys: String, CodingKey{
         case collections = "custom_collections"
     }
+
 }

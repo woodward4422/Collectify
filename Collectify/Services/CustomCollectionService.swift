@@ -28,11 +28,17 @@ class CustomCollectionService{
      - Parameter completion: escaping closure to be used by the caller either passing in [CustomCollection] or an APIError.
      
      */
-    func getResources(route: getRoute,completion: @escaping (Result<[CustomCollection],APIError>) -> ()){
+    func getResources(route: getRoute,completion: @escaping (Result<CustomCollections,APIError>) -> ()){
         
         
         AF.request(route.getURL(),method: .get, parameters: route.constructParams()).responseDecodable { (response: DataResponse<CustomCollections>) in
-            print(response.result)
+            switch response.result {
+            case .success(let collections):
+                completion(.success(collections))
+            case .failure(let error):
+                completion(.failure(APIError.FailedAPICall("Failed to get get data from API")))
+            }
+            
         }
         
         
