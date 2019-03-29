@@ -2,7 +2,7 @@
 iOS Summer Internship Shopify Challenge
 
 ## Screenshots
-<img src="Collections.png" width ="260" height="460"> <img src="Products.png" width ="260" height="460">
+<img src="Collection.png" width ="260" height="460"> <img src="Product.png" width ="260" height="460">
 
 ## Startup Guide
 
