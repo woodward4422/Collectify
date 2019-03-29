@@ -17,6 +17,7 @@
 		7A29C1ED224DB08E0069D362 /* CollectionsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A29C1EB224DB08E0069D362 /* CollectionsCollectionViewCell.xib */; };
 		7A29C1F0224DE0B20069D362 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1EE224DE0B20069D362 /* ProductsViewController.swift */; };
 		7A29C1F1224DE0B20069D362 /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A29C1EF224DE0B20069D362 /* ProductsViewController.xib */; };
+		7A29C1F3224E81790069D362 /* Collect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1F2224E81790069D362 /* Collect.swift */; };
 		7AB327D9224D2F7E000CDFB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327D8224D2F7E000CDFB5 /* AppDelegate.swift */; };
 		7AB327E1224D2F7E000CDFB5 /* Collectify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327DF224D2F7E000CDFB5 /* Collectify.xcdatamodeld */; };
 		7AB327E3224D2F81000CDFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB327E2224D2F81000CDFB5 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		7A29C1EB224DB08E0069D362 /* CollectionsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionsCollectionViewCell.xib; sourceTree = "<group>"; };
 		7A29C1EE224DE0B20069D362 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		7A29C1EF224DE0B20069D362 /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
+		7A29C1F2224E81790069D362 /* Collect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collect.swift; sourceTree = "<group>"; };
 		7AB327D5224D2F7E000CDFB5 /* Collectify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collectify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB327D8224D2F7E000CDFB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AB327E0224D2F7E000CDFB5 /* Collectify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Collectify.xcdatamodel; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				7AB327F0224D30F8000CDFB5 /* CustomCollection.swift */,
 				7AB327F2224D3B00000CDFB5 /* CollectionImage.swift */,
 				7A29C1C2224DA5010069D362 /* CustomCollections.swift */,
+				7A29C1F2224E81790069D362 /* Collect.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				7AB6764B224D3E6700DB9ECB /* CustomCollectionService.swift in Sources */,
 				7A29C1BE224D74BB0069D362 /* APIError.swift in Sources */,
 				7A29C1BC224D73690069D362 /* Route.swift in Sources */,
+				7A29C1F3224E81790069D362 /* Collect.swift in Sources */,
 				7AB327F1224D30F8000CDFB5 /* CustomCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

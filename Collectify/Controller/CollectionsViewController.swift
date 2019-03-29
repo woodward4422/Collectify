@@ -49,25 +49,43 @@ class CollectionsViewController: UIViewController {
     
     
     private func loadData(){
-        self.collectionService.getResources(route: .customCollection) { (result) in
+        self.collectionService.getAllCollections(route: .customCollection) { (result) in
             switch result{
             case .success(let collections):
                 self.collections = collections
                 self.collectionView.reloadData()
             case .failure(let error):
-                print("Unable to get collections")
+                print(error.localizedDescription)
             }
         }
     }
     
-    private func transitionToNext(){
-        let nextVC = ProductsViewController()
+    private func transitionToNext(id: String){
+        let nextVC = ProductsViewController(service: CustomCollectionService())
+        print()
+        
+        getCollects(id: id, completion: { (collects) in
+            nextVC.collects = collects
+        })
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     private func navSetup(){
         self.title = "Collections"
         navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    private func getCollects(id: String, completion: @escaping ([Collect]?) ->()) {
+        self.collectionService.getAllCollects(route: .collects(id: id)) { (result) in
+            switch result{
+            case .success(let loadedCollects):
+               let collects = loadedCollects.collects
+                completion(collects)
+            case .failure(let error):
+               completion(nil)
+            }
+        }
+        
     }
 
  
@@ -77,7 +95,11 @@ class CollectionsViewController: UIViewController {
 
 extension CollectionsViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       return 5
+        if let unwrappedCollections = collections{
+            return unwrappedCollections.collections.count
+        } else{
+            return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -89,7 +111,12 @@ extension CollectionsViewController: UICollectionViewDelegate, UICollectionViewD
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        transitionToNext()
+        // TODO: Present an alert for error handling here
+        guard let collectionsUnwrapped = collections?.collections else { return }
+        let id = String(collectionsUnwrapped[indexPath.row].id)
+        transitionToNext(id: id)
+        
+        
     }
     
     
