@@ -15,6 +15,7 @@ class ProductsViewController: UIViewController {
             loadData()
         }
     }
+    var products: [Product]?
     private var collectionService: CustomCollectionService
     
 
@@ -36,8 +37,21 @@ class ProductsViewController: UIViewController {
     
     private func loadData(){
         print("Collects: \(self.collects)")
+        // Map the ids of all the products for the given collect and use this in the Route that we created
         let productIds = collects?.map{String($0.id)}.joined(separator: ",")
+        if let ids = productIds{
+            self.collectionService.getAllProducts(route: .products(id: ids)) { (result) in
+                switch result{
+                case .success(let loadedProducts):
+                    self.products = loadedProducts
+                case .failure(let error):
+                    print("Error getting the products")
+                    
+                }
+            }
+        }
         
+
         }
         
         
@@ -48,4 +62,4 @@ class ProductsViewController: UIViewController {
 
     
 
-}
+

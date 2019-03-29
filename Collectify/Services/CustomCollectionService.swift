@@ -65,10 +65,20 @@ class CustomCollectionService{
     /**
      Gets all the Products based off of product IDs that are passed in.
      
-     - Parameter completion: escaping closure to be used by the caller either passing in Collects or an APIError.
+     - Parameter completion: escaping closure to be used by the caller either passing in Products or an APIError.
      
      */
-
+    
+    func getAllProducts(route: getRoute, completion: @escaping (Result<[Product],APIError>) -> ()){
+        AF.request(route.getURL(),method: .get, parameters: route.constructParams()).responseDecodable { (response: DataResponse<Products>) in
+            switch response.result {
+            case .success(let products):
+                completion(.success(products.products))
+            case .failure(let error):
+                completion(.failure(APIError.FailedAPICall(error.localizedDescription)))
+            }
+        }
+    }
 }
 
 
