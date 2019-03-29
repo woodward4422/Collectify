@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4C9F32E10825F49B48C7D5AC /* Pods_Collectify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CF9D2A59C011916E2B390 /* Pods_Collectify.framework */; };
+		7A29C1BC224D73690069D362 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1BB224D73690069D362 /* Route.swift */; };
+		7A29C1BE224D74BB0069D362 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1BD224D74BB0069D362 /* APIError.swift */; };
+		7A29C1C3224DA5010069D362 /* CustomCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1C2224DA5010069D362 /* CustomCollections.swift */; };
+		7A29C1E7224DAD490069D362 /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1E5224DAD490069D362 /* CollectionsViewController.swift */; };
+		7A29C1E8224DAD490069D362 /* CollectionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A29C1E6224DAD490069D362 /* CollectionsViewController.xib */; };
 		7AB327D9224D2F7E000CDFB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327D8224D2F7E000CDFB5 /* AppDelegate.swift */; };
-		7AB327DB224D2F7E000CDFB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327DA224D2F7E000CDFB5 /* ViewController.swift */; };
-		7AB327DE224D2F7E000CDFB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB327DC224D2F7E000CDFB5 /* Main.storyboard */; };
 		7AB327E1224D2F7E000CDFB5 /* Collectify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327DF224D2F7E000CDFB5 /* Collectify.xcdatamodeld */; };
 		7AB327E3224D2F81000CDFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB327E2224D2F81000CDFB5 /* Assets.xcassets */; };
 		7AB327E6224D2F81000CDFB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB327E4224D2F81000CDFB5 /* LaunchScreen.storyboard */; };
@@ -22,10 +25,13 @@
 /* Begin PBXFileReference section */
 		0D7AB79A8308D2D50DA53221 /* Pods-Collectify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collectify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Collectify/Pods-Collectify.release.xcconfig"; sourceTree = "<group>"; };
 		3C5B324CEADC2C051A9A5BA2 /* Pods-Collectify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collectify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Collectify/Pods-Collectify.debug.xcconfig"; sourceTree = "<group>"; };
+		7A29C1BB224D73690069D362 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		7A29C1BD224D74BB0069D362 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		7A29C1C2224DA5010069D362 /* CustomCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollections.swift; sourceTree = "<group>"; };
+		7A29C1E5224DAD490069D362 /* CollectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
+		7A29C1E6224DAD490069D362 /* CollectionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionsViewController.xib; sourceTree = "<group>"; };
 		7AB327D5224D2F7E000CDFB5 /* Collectify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collectify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB327D8224D2F7E000CDFB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7AB327DA224D2F7E000CDFB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7AB327DD224D2F7E000CDFB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AB327E0224D2F7E000CDFB5 /* Collectify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Collectify.xcdatamodel; sourceTree = "<group>"; };
 		7AB327E2224D2F81000CDFB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AB327E5224D2F81000CDFB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +71,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7A29C1BA224D73570069D362 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7A29C1BB224D73690069D362 /* Route.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7A29C1E9224DB03E0069D362 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		7AB327CC224D2F7D000CDFB5 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +107,7 @@
 		7AB327D7224D2F7E000CDFB5 /* Collectify */ = {
 			isa = PBXGroup;
 			children = (
+				7A29C1BA224D73570069D362 /* Helpers */,
 				7AB67649224D3E5100DB9ECB /* Services */,
 				7AB327EF224D30CD000CDFB5 /* Controller */,
 				7AB327EE224D30C2000CDFB5 /* View */,
@@ -104,6 +126,7 @@
 			children = (
 				7AB327F0224D30F8000CDFB5 /* CustomCollection.swift */,
 				7AB327F2224D3B00000CDFB5 /* CollectionImage.swift */,
+				7A29C1C2224DA5010069D362 /* CustomCollections.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,7 +134,8 @@
 		7AB327EE224D30C2000CDFB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7AB327DC224D2F7E000CDFB5 /* Main.storyboard */,
+				7A29C1E9224DB03E0069D362 /* Cells */,
+				7A29C1E6224DAD490069D362 /* CollectionsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,7 +143,7 @@
 		7AB327EF224D30CD000CDFB5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7AB327DA224D2F7E000CDFB5 /* ViewController.swift */,
+				7A29C1E5224DAD490069D362 /* CollectionsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				7AB6764A224D3E6700DB9ECB /* CustomCollectionService.swift */,
+				7A29C1BD224D74BB0069D362 /* APIError.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -195,7 +220,7 @@
 			files = (
 				7AB327E6224D2F81000CDFB5 /* LaunchScreen.storyboard in Resources */,
 				7AB327E3224D2F81000CDFB5 /* Assets.xcassets in Resources */,
-				7AB327DE224D2F7E000CDFB5 /* Main.storyboard in Resources */,
+				7A29C1E8224DAD490069D362 /* CollectionsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,12 +278,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Collectify/Pods-Collectify-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -272,11 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A29C1E7224DAD490069D362 /* CollectionsViewController.swift in Sources */,
 				7AB327E1224D2F7E000CDFB5 /* Collectify.xcdatamodeld in Sources */,
 				7AB327F3224D3B00000CDFB5 /* CollectionImage.swift in Sources */,
-				7AB327DB224D2F7E000CDFB5 /* ViewController.swift in Sources */,
+				7A29C1C3224DA5010069D362 /* CustomCollections.swift in Sources */,
 				7AB327D9224D2F7E000CDFB5 /* AppDelegate.swift in Sources */,
 				7AB6764B224D3E6700DB9ECB /* CustomCollectionService.swift in Sources */,
+				7A29C1BE224D74BB0069D362 /* APIError.swift in Sources */,
+				7A29C1BC224D73690069D362 /* Route.swift in Sources */,
 				7AB327F1224D30F8000CDFB5 /* CustomCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,14 +316,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7AB327DC224D2F7E000CDFB5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AB327DD224D2F7E000CDFB5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7AB327E4224D2F81000CDFB5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -6,5 +6,8 @@ target 'Collectify' do
   use_frameworks!
 
   # Pods for Collectify
-  pod 'Alamofire'
+  pod 'Result'
+  pod 'SwiftyJSON'
+  pod 'Alamofire', '~> 5.0.0-beta.3'
+
 end
