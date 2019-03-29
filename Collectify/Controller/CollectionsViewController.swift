@@ -58,6 +58,11 @@ class CollectionsViewController: UIViewController {
             }
         }
     }
+    
+    private func transitionToNext(){
+        let nextVC = ProductsViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
 
  
 
@@ -74,6 +79,11 @@ extension CollectionsViewController: UICollectionViewDelegate, UICollectionViewD
        let collection = collections?.collections[indexPath.row]
        cell.collection = collection
        return cell
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        transitionToNext()
     }
     
     

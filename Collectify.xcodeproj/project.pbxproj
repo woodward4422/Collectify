@@ -15,6 +15,8 @@
 		7A29C1E8224DAD490069D362 /* CollectionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A29C1E6224DAD490069D362 /* CollectionsViewController.xib */; };
 		7A29C1EC224DB08E0069D362 /* CollectionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1EA224DB08E0069D362 /* CollectionsCollectionViewCell.swift */; };
 		7A29C1ED224DB08E0069D362 /* CollectionsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A29C1EB224DB08E0069D362 /* CollectionsCollectionViewCell.xib */; };
+		7A29C1F0224DE0B20069D362 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1EE224DE0B20069D362 /* ProductsViewController.swift */; };
+		7A29C1F1224DE0B20069D362 /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A29C1EF224DE0B20069D362 /* ProductsViewController.xib */; };
 		7AB327D9224D2F7E000CDFB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327D8224D2F7E000CDFB5 /* AppDelegate.swift */; };
 		7AB327E1224D2F7E000CDFB5 /* Collectify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AB327DF224D2F7E000CDFB5 /* Collectify.xcdatamodeld */; };
 		7AB327E3224D2F81000CDFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB327E2224D2F81000CDFB5 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 		7A29C1E6224DAD490069D362 /* CollectionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionsViewController.xib; sourceTree = "<group>"; };
 		7A29C1EA224DB08E0069D362 /* CollectionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7A29C1EB224DB08E0069D362 /* CollectionsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionsCollectionViewCell.xib; sourceTree = "<group>"; };
+		7A29C1EE224DE0B20069D362 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		7A29C1EF224DE0B20069D362 /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
 		7AB327D5224D2F7E000CDFB5 /* Collectify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collectify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB327D8224D2F7E000CDFB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AB327E0224D2F7E000CDFB5 /* Collectify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Collectify.xcdatamodel; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			children = (
 				7A29C1E9224DB03E0069D362 /* Cells */,
 				7A29C1E6224DAD490069D362 /* CollectionsViewController.xib */,
+				7A29C1EF224DE0B20069D362 /* ProductsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				7A29C1E5224DAD490069D362 /* CollectionsViewController.swift */,
+				7A29C1EE224DE0B20069D362 /* ProductsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 				7AB327E6224D2F81000CDFB5 /* LaunchScreen.storyboard in Resources */,
 				7AB327E3224D2F81000CDFB5 /* Assets.xcassets in Resources */,
 				7A29C1E8224DAD490069D362 /* CollectionsViewController.xib in Resources */,
+				7A29C1F1224DE0B20069D362 /* ProductsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +321,7 @@
 				7AB327E1224D2F7E000CDFB5 /* Collectify.xcdatamodeld in Sources */,
 				7A29C1EC224DB08E0069D362 /* CollectionsCollectionViewCell.swift in Sources */,
 				7AB327F3224D3B00000CDFB5 /* CollectionImage.swift in Sources */,
+				7A29C1F0224DE0B20069D362 /* ProductsViewController.swift in Sources */,
 				7A29C1C3224DA5010069D362 /* CustomCollections.swift in Sources */,
 				7AB327D9224D2F7E000CDFB5 /* AppDelegate.swift in Sources */,
 				7AB6764B224D3E6700DB9ECB /* CustomCollectionService.swift in Sources */,
