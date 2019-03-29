@@ -10,7 +10,7 @@ import UIKit
 import Kingfisher
 
 class ProductCollectionViewCell: UICollectionViewCell {
-    
+    //MARK: VARS
     @IBOutlet weak var productImage: UIImageView!
     
     @IBOutlet weak var productTitle: UILabel!
@@ -23,13 +23,13 @@ class ProductCollectionViewCell: UICollectionViewCell {
             setupCell()
         }
     }
-
-
+    
+    //MARK: METHODS
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-        // This allows for the cell to adjust in size depending the size of the content inside and the constraints set for the subviews of the cell
+    // This allows for the cell to adjust in size depending the size of the content inside and the constraints set for the subviews of the cell
     override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         setNeedsLayout()
         layoutIfNeeded()
@@ -55,5 +55,5 @@ class ProductCollectionViewCell: UICollectionViewCell {
         self.clipsToBounds = true
         self.layer.cornerRadius = 8
     }
-
+    
 }

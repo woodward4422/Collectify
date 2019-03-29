@@ -15,8 +15,8 @@ struct CustomCollections: Codable {
         self.collections = collections
     }
     
-
-
+    
+    
 }
 
 
@@ -24,5 +24,5 @@ extension CustomCollections {
     enum CodingKeys: String, CodingKey{
         case collections = "custom_collections"
     }
-
+    
 }

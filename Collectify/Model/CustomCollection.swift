@@ -14,7 +14,7 @@ struct CustomCollection: Codable {
     var image: CollectionImage
     var body: String
     
-
+    
 }
 
 extension CustomCollection{

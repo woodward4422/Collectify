@@ -11,7 +11,7 @@ import Kingfisher
 
 
 class CollectionsCollectionViewCell: UICollectionViewCell {
-    
+    // MARK: VARS
     var collection: CustomCollection? {
         didSet {
             setupCell()
@@ -22,11 +22,13 @@ class CollectionsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var collectionTitle: UILabel!
     
+    // MARK: METHODS
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
+    // This allows for the cell to adjust in size depending the size of the content inside and the constraints set for the subviews of the cell
     override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         setNeedsLayout()
         layoutIfNeeded()
@@ -47,7 +49,7 @@ class CollectionsCollectionViewCell: UICollectionViewCell {
         self.clipsToBounds = true
         self.layer.cornerRadius = 8
         
-
+        
     }
     
     

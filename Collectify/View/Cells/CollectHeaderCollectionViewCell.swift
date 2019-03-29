@@ -11,6 +11,7 @@ import Kingfisher
 
 class CollectHeaderCollectionViewCell: UICollectionViewCell {
     
+    //MARK: VARS
     @IBOutlet weak var collectImage: UIImageView!
     @IBOutlet weak var collectTitle: UILabel!
     @IBOutlet weak var bodyText: UILabel!
@@ -20,6 +21,7 @@ class CollectHeaderCollectionViewCell: UICollectionViewCell {
             setupCell()
         }
     }
+    //MARK: METHODS
     override func awakeFromNib() {
         super.awakeFromNib()
     }

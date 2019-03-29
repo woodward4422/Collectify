@@ -61,8 +61,6 @@ class CollectionsViewController: UIViewController {
     
     private func transitionToNext(id: String, collection: CustomCollection){
         let nextVC = ProductsViewController(service: CustomCollectionService())
-        print()
-        
         getCollects(id: id, completion: { (collects) in
             nextVC.collects = collects
         })
@@ -79,17 +77,17 @@ class CollectionsViewController: UIViewController {
         self.collectionService.getAllCollects(route: .collects(id: id)) { (result) in
             switch result{
             case .success(let loadedCollects):
-               let collects = loadedCollects.collects
+                let collects = loadedCollects.collects
                 completion(collects)
             case .failure(let error):
-               completion(nil)
+                completion(nil)
             }
         }
         
     }
-
- 
-
+    
+    
+    
 }
 
 
@@ -106,9 +104,9 @@ extension CollectionsViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! CollectionsCollectionViewCell
-       let collection = collections?.collections[indexPath.row]
-       cell.collection = collection
-       return cell
+        let collection = collections?.collections[indexPath.row]
+        cell.collection = collection
+        return cell
     }
     
     

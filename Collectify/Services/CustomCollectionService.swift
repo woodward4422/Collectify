@@ -14,10 +14,7 @@ import Alamofire
 
 
 
-class CustomCollectionService{
-    
-    static let sharedInstance = CustomCollectionService()
-    let session = URLSession.shared
+struct CustomCollectionService{
     
     
     
@@ -25,10 +22,11 @@ class CustomCollectionService{
     /**
      Gets all the Custom List elements and decodes them into a list of CustomCollection objects .
      
+     - Parameter route: A specification(enum case) of the type of route being requested for.
      - Parameter completion: escaping closure to be used by the caller either passing in [CustomCollection] or an APIError.
      
      */
-    func getAllCollections(route: getRoute,completion: @escaping (Result<CustomCollections,APIError>) -> ()){
+    func getAllCollections(route: GetRoute,completion: @escaping (Result<CustomCollections,APIError>) -> ()){
         
         
         AF.request(route.getURL(),method: .get, parameters: route.constructParams()).responseDecodable { (response: DataResponse<CustomCollections>) in
@@ -46,11 +44,12 @@ class CustomCollectionService{
     /**
      Gets all the Collects based off of a collection ID that is passed in.
      
+     - Parameter route: A specification(enum case) of the type of route being requested for.
      - Parameter completion: escaping closure to be used by the caller either passing in Collects or an APIError.
      
      */
     
-    func getAllCollects(route: getRoute, completion: @escaping (Result<Collects,APIError>) -> ()){
+    func getAllCollects(route: GetRoute, completion: @escaping (Result<Collects,APIError>) -> ()){
         
          AF.request(route.getURL(),method: .get, parameters: route.constructParams()).responseDecodable { (response: DataResponse<Collects>) in
             switch response.result {
@@ -65,11 +64,11 @@ class CustomCollectionService{
     /**
      Gets all the Products based off of product IDs that are passed in.
      
-     - Parameter completion: escaping closure to be used by the caller either passing in Products or an APIError.
-     
+     - Parameter route: A specification(enum case) of the type of route being requested for.
+     - Parameter completion: escaping closure to be used by the caller either passing in [Product] or an APIError.
      */
     
-    func getAllProducts(route: getRoute, completion: @escaping (Result<[Product],APIError>) -> ()){
+    func getAllProducts(route: GetRoute, completion: @escaping (Result<[Product],APIError>) -> ()){
         AF.request(route.getURL(),method: .get, parameters: route.constructParams()).responseDecodable { (response: DataResponse<Products>) in
             switch response.result {
             case .success(let products):

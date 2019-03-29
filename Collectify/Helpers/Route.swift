@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 
 
-// The enum use here will allow for the
-enum getRoute{
+// The enum use here will allow for flexible networking calls by just specifying the enum case, this will also allow us to easily create the request URL and the request parameters.
+enum GetRoute{
     case customCollection
     case products(id: String)
     case collects(id: String)
