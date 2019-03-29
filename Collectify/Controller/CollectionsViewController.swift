@@ -32,7 +32,6 @@ class CollectionsViewController: UIViewController {
         setupCollectionView()
         loadData()
         navSetup()
-        // Do any additional setup after loading the view.
     }
     
     
@@ -115,7 +114,10 @@ extension CollectionsViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // TODO: Present an alert for error handling here
-        guard let collectionsUnwrapped = collections?.collections else { return }
+        guard let collectionsUnwrapped = collections?.collections else {
+            self.presentAlert(errorMessage: "There are no collections at this time, try again later!")
+            return
+        }
         let id = String(collectionsUnwrapped[indexPath.row].id)
         transitionToNext(id: id, collection: collectionsUnwrapped[indexPath.row])
         

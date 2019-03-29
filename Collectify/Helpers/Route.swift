@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 
-
+// The enum use here will allow for the
 enum getRoute{
     case customCollection
     case products(id: String)
