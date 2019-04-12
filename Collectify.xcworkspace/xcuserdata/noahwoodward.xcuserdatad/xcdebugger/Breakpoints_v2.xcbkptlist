@@ -15,8 +15,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "CollectionsCollectionViewCell"
-            landmarkType = "3">
+            landmarkName = "setupCell()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Collectify/Controller/CollectionsViewController.swift"
-            timestampString = "575595694.443359"
+            timestampString = "576742627.840308"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -41,126 +41,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Collectify/Services/CustomCollectionService.swift"
-            timestampString = "575595694.443626"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "getAllCollections(route:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Collectify.CustomCollections&gt;) -&gt; () in Collectify.CustomCollectionService.getAllCollections(route: Collectify.getRoute, completion: (Result.Result&lt;Collectify.CustomCollections, Collectify.APIError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Collectify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/noahwoodward/MakeSchool/Collectify/Collectify/Services/CustomCollectionService.swift"
-                  timestampString = "575572746.066299"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "78">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Collectify.CustomCollections&gt;) -&gt; () in Collectify.CustomCollectionService.getAllCollections(route: Collectify.getRoute, completion: (Result.Result&lt;Collectify.CustomCollections, Collectify.APIError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Collectify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/noahwoodward/MakeSchool/Collectify/Collectify/Services/CustomCollectionService.swift"
-                  timestampString = "575572746.070497"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "100">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Collectify/Services/CustomCollectionService.swift"
-            timestampString = "575595694.444641"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "getAllCollections(route:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Collectify/Services/CustomCollectionService.swift"
-            timestampString = "575595694.445383"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "getAllCollects(route:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Collectify.CustomCollectionService.getAllCollects(route: Collectify.getRoute, completion: (Result.Result&lt;Collectify.Collects, Collectify.APIError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Collectify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/noahwoodward/MakeSchool/Collectify/Collectify/Services/CustomCollectionService.swift"
-                  timestampString = "575573151.240342"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "46">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Collectify.Collects&gt;) -&gt; () in Collectify.CustomCollectionService.getAllCollects(route: Collectify.getRoute, completion: (Result.Result&lt;Collectify.Collects, Collectify.APIError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Collectify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/noahwoodward/MakeSchool/Collectify/Collectify/Services/CustomCollectionService.swift"
-                  timestampString = "575573151.243812"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "37">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Collectify/Controller/CollectionsViewController.swift"
-            timestampString = "575595694.4461"
+            timestampString = "576742627.84051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "getCollects(id:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "CollectionsViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -202,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Collectify/Controller/CollectionsViewController.swift"
-            timestampString = "575595694.446261"
+            timestampString = "576742627.840656"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "getCollects(id:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,7 +106,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Collectify/Controller/CollectionsViewController.swift"
-            timestampString = "575595694.446541"
+            timestampString = "576742627.840786"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "getCollects(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Collectify/Controller/CollectionsViewController.swift"
+            timestampString = "576742627.840915"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
@@ -234,27 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Collectify/Controller/CollectionsViewController.swift"
-            timestampString = "575595694.4467371"
+            timestampString = "576742627.841148"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "getCollects(id:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Collectify/Controller/CollectionsViewController.swift"
-            timestampString = "575595694.44698"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "getCollects(id:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Collectify/Model/Product.swift"
-            timestampString = "575595694.447242"
+            timestampString = "576742627.841279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -294,17 +182,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Collectify/View/Cells/CollectHeaderCollectionViewCell.swift"
-            timestampString = "575595694.447891"
+            timestampString = "576473096.655103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "CollectHeaderCollectionViewCell"
-            landmarkType = "3">
+            landmarkName = "setupCell()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -314,12 +202,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Collectify/Controller/ProductsViewController.swift"
-            timestampString = "575595694.448238"
+            timestampString = "576742627.842281"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "106"
             endingLineNumber = "106"
             landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Collectify/Services/CustomCollectionService.swift"
+            timestampString = "576473096.655588"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "getAllCollects(route:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

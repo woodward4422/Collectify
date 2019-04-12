@@ -21,6 +21,7 @@ class CollectHeaderCollectionViewCell: UICollectionViewCell {
             setupCell()
         }
     }
+    
     //MARK: METHODS
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,7 +39,7 @@ class CollectHeaderCollectionViewCell: UICollectionViewCell {
         return layoutAttributes
     }
     
-    private func setupCell(){
+    private func setupCell() {
         collectTitle.text = self.collection?.title
         if let imageString = self.collection?.image.image{
             let collectionImageURL = URL(string: imageString)
@@ -49,13 +50,11 @@ class CollectHeaderCollectionViewCell: UICollectionViewCell {
         
         self.clipsToBounds = true
         self.layer.cornerRadius = 8
-        
     }
     
-    private func formatImage(){
+    private func formatImage() {
         // Makes the image circular
         collectImage.layer.cornerRadius = collectImage.frame.width / 2
         collectImage.clipsToBounds = true
-        
     }
 }
