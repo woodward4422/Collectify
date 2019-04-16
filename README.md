@@ -1,13 +1,14 @@
 # Collectify
 iOS Summer Internship Shopify Challenge
+Noah Woodward
 
 ## Screenshots
-<img src="Collections.png" width ="260" height="460"> <img src="Products.png" width ="260" height="460">
+<img src="Collection.png" width ="260" height="460"> <img src="Product.png" width ="260" height="460">
 
 ## Startup Guide
 
 ```bash
-git clone https://github.com/ShennyO/Shopify-Mobile-Developer-Intern-Challenge---Summer-2019.git
+https://github.com/woodward4422/Collectify.git
 ```
 
 ```bash
