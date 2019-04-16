@@ -8,12 +8,21 @@
 
 import Foundation
 struct Collects: Codable {
-    let collects: [Collect]
+    var collects: [Collect]
+    
+    init(collects: [Collect]) {
+        self.collects = collects
+    }
 }
 
 
 struct Collect: Codable{
-    let id: Int
+    var id: Int
+    
+    init(id: Int) {
+        self.id = id
+    }
+    
 }
 
 

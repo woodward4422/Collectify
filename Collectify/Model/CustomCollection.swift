@@ -14,6 +14,13 @@ struct CustomCollection: Codable {
     var image: CollectionImage
     var body: String
     
+    init(title: String, id: Int, image: CollectionImage, body: String) {
+        self.title = title
+        self.id = id
+        self.image = image
+        self.body = body
+    }
+    
     
 }
 

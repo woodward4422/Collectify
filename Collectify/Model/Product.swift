@@ -10,6 +10,10 @@ import Foundation
 
 struct Products: Codable{
     let products: [Product]
+    
+    init(products: [Product]) {
+        self.products = products
+    }
 }
 
 struct Product: Codable{
@@ -17,6 +21,14 @@ struct Product: Codable{
     let body: String
     let image: ProductImage
     let variants: [Variant]
+    
+    
+    init(title: String, body: String, image: ProductImage, variants: [Variant]) {
+        self.title = title
+        self.body = body
+        self.image = image
+        self.variants = variants
+    }
     
     
     enum CodingKeys: String, CodingKey{
@@ -39,6 +51,10 @@ struct Product: Codable{
 struct Variant: Codable {
     let count: Int
     
+    init(count: Int) {
+        self.count = count
+    }
+    
     enum CodingKeys: String, CodingKey{
         case count = "inventory_quantity"
     }
@@ -46,6 +62,10 @@ struct Variant: Codable {
 
 struct ProductImage:Codable{
     let image: String
+    
+    init(image: String) {
+        self.image = image
+    }
     
     enum CodingKeys: String, CodingKey{
         case image = "src"

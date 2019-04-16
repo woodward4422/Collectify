@@ -13,7 +13,7 @@ import Alamofire
 
 
 
-struct CustomCollectionService{
+struct CustomCollectionService: CustomCollectionNetworkLayer{
     
     
     
@@ -28,7 +28,7 @@ struct CustomCollectionService{
     func getAllCollections(route: GetRoute,completion: @escaping (Result<CustomCollections,APIError>) -> ()){
         
         
-        AF.request(route.getURL(),method: .get, parameters: route.constructParams()).responseDecodable { (response: DataResponse<CustomCollections>) in
+        AF.request(route.createURL()!,method: .get).responseDecodable { (response: DataResponse<CustomCollections>) in
             switch response.result {
             case .success(let collections):
                 completion(.success(collections))
@@ -50,7 +50,7 @@ struct CustomCollectionService{
     
     func getAllCollects(route: GetRoute, completion: @escaping (Result<Collects,APIError>) -> ()){
         
-         AF.request(route.getURL(),method: .get, parameters: route.constructParams()).responseDecodable { (response: DataResponse<Collects>) in
+        AF.request(route.createURL()!,method: .get).responseDecodable { (response: DataResponse<Collects>) in
             switch response.result {
             case .success(let collects):
                 completion(.success(collects))
@@ -68,7 +68,7 @@ struct CustomCollectionService{
      */
     
     func getAllProducts(route: GetRoute, completion: @escaping (Result<[Product],APIError>) -> ()){
-        AF.request(route.getURL(),method: .get, parameters: route.constructParams()).responseDecodable { (response: DataResponse<Products>) in
+        AF.request(route.createURL()!,method: .get).responseDecodable { (response: DataResponse<Products>) in
             switch response.result {
             case .success(let products):
                 completion(.success(products.products))

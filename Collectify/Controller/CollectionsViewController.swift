@@ -10,13 +10,13 @@ import UIKit
 
 class CollectionsViewController: UIViewController {
     // MARK: VARS
-    var collectionService: CustomCollectionService
+    var collectionService: CustomCollectionNetworkLayer
     private var collections: CustomCollections?
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: INITIALIZER
-    init(service: CustomCollectionService){
+    init(service: CustomCollectionNetworkLayer){
         self.collectionService = service
         super.init(nibName: "CollectionsViewController", bundle: nil)
     }

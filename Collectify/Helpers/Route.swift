@@ -16,29 +16,41 @@ enum GetRoute{
     case products(id: String)
     case collects(id: String)
     
-    func getURL() -> String{
+    func getPath() -> String{
         switch self {
         case .customCollection:
-            return "https://shopicruit.myshopify.com/admin/custom_collections.json"
+            return "custom_collections.json"
         case .collects:
-            return "https://shopicruit.myshopify.com/admin/collects.json"
+            return "collects.json"
         case .products:
-            return "https://shopicruit.myshopify.com/admin/products.json"
+            return "products.json"
         }
     }
 
     
-    func constructParams() -> Parameters {
+    func constructParams() -> [URLQueryItem] {
         let accessToken = "c32313df0d0ef512ca64d5b336a0d7c6"
+        var queryItems = [URLQueryItem(name: "access_token", value: accessToken)]
+        
         switch self{
         case .customCollection:
-            return ["access_token": accessToken]
+            break
         case let .collects(id):
-            return ["access_token": accessToken, "collection_id":id]
+            queryItems.append(URLQueryItem(name:"collection_id", value:id))
         case let .products(id):
-            return ["access_token": accessToken,
-                    "ids": id
-            ]
+            queryItems.append(URLQueryItem(name: "ids", value: id))
         }
+        
+        return queryItems
+    }
+    
+    func createURL() -> URL?{
+
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "shopicruit.myshopify.com"
+        urlComponents.path = "/admin/" + getPath()
+        urlComponents.queryItems = constructParams()
+        return urlComponents.url
     }
 }
