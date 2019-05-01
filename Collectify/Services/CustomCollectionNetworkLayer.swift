@@ -14,5 +14,4 @@ protocol CustomCollectionNetworkLayer{
      func getAllCollections(route: GetRoute,completion: @escaping (Result<CustomCollections,APIError>) -> ())
      func getAllCollects(route: GetRoute, completion: @escaping (Result<Collects,APIError>) -> ())
      func getAllProducts(route: GetRoute, completion: @escaping (Result<[Product],APIError>) -> ())
-     
 }

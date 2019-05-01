@@ -33,7 +33,18 @@
 		7ABDC53E224EDD54009F8A55 /* AlertPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABDC53D224EDD54009F8A55 /* AlertPresent.swift */; };
 		7AF7150322650CDD00C5BF3B /* CustomCollectionNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7150222650CDD00C5BF3B /* CustomCollectionNetworkLayer.swift */; };
 		7AF7150522650DE500C5BF3B /* CustomCollectionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7150422650DE500C5BF3B /* CustomCollectionMock.swift */; };
+		7AF8A3E222711C97009CE93E /* CollectifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8A3E122711C97009CE93E /* CollectifyTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AF8A3E422711C97009CE93E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AB327CD224D2F7D000CDFB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AB327D4224D2F7E000CDFB5;
+			remoteInfo = Collectify;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0D7AB79A8308D2D50DA53221 /* Pods-Collectify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collectify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Collectify/Pods-Collectify.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +76,9 @@
 		7ABDC53D224EDD54009F8A55 /* AlertPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresent.swift; sourceTree = "<group>"; };
 		7AF7150222650CDD00C5BF3B /* CustomCollectionNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionNetworkLayer.swift; sourceTree = "<group>"; };
 		7AF7150422650DE500C5BF3B /* CustomCollectionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionMock.swift; sourceTree = "<group>"; };
+		7AF8A3DF22711C97009CE93E /* CollectifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AF8A3E122711C97009CE93E /* CollectifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectifyTests.swift; sourceTree = "<group>"; };
+		7AF8A3E322711C97009CE93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2CF9D2A59C011916E2B390 /* Pods_Collectify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collectify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +88,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C9F32E10825F49B48C7D5AC /* Pods_Collectify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AF8A3DC22711C97009CE93E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				7AB327D7224D2F7E000CDFB5 /* Collectify */,
+				7AF8A3E022711C97009CE93E /* CollectifyTests */,
 				7AB327D6224D2F7E000CDFB5 /* Products */,
 				2F5DF955F1423A1F8E493524 /* Pods */,
 				0215E85A82FC64215A9F2DA7 /* Frameworks */,
@@ -133,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				7AB327D5224D2F7E000CDFB5 /* Collectify.app */,
+				7AF8A3DF22711C97009CE93E /* CollectifyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +219,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		7AF8A3E022711C97009CE93E /* CollectifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AF8A3E122711C97009CE93E /* CollectifyTests.swift */,
+				7AF8A3E322711C97009CE93E /* Info.plist */,
+			);
+			path = CollectifyTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +251,24 @@
 			productReference = 7AB327D5224D2F7E000CDFB5 /* Collectify.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7AF8A3DE22711C97009CE93E /* CollectifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AF8A3E822711C97009CE93E /* Build configuration list for PBXNativeTarget "CollectifyTests" */;
+			buildPhases = (
+				7AF8A3DB22711C97009CE93E /* Sources */,
+				7AF8A3DC22711C97009CE93E /* Frameworks */,
+				7AF8A3DD22711C97009CE93E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AF8A3E522711C97009CE93E /* PBXTargetDependency */,
+			);
+			name = CollectifyTests;
+			productName = CollectifyTests;
+			productReference = 7AF8A3DF22711C97009CE93E /* CollectifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -231,6 +281,10 @@
 				TargetAttributes = {
 					7AB327D4224D2F7E000CDFB5 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					7AF8A3DE22711C97009CE93E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7AB327D4224D2F7E000CDFB5;
 					};
 				};
 			};
@@ -248,6 +302,7 @@
 			projectRoot = "";
 			targets = (
 				7AB327D4224D2F7E000CDFB5 /* Collectify */,
+				7AF8A3DE22711C97009CE93E /* CollectifyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +319,13 @@
 				7AB327E3224D2F81000CDFB5 /* Assets.xcassets in Resources */,
 				7A29C1E8224DAD490069D362 /* CollectionsViewController.xib in Resources */,
 				7A29C1F1224DE0B20069D362 /* ProductsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AF8A3DD22711C97009CE93E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +427,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7AF8A3DB22711C97009CE93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AF8A3E222711C97009CE93E /* CollectifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AF8A3E522711C97009CE93E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AB327D4224D2F7E000CDFB5 /* Collectify */;
+			targetProxy = 7AF8A3E422711C97009CE93E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7AB327E4224D2F81000CDFB5 /* LaunchScreen.storyboard */ = {
@@ -533,6 +611,46 @@
 			};
 			name = Release;
 		};
+		7AF8A3E622711C97009CE93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBGPXWFD5T;
+				INFOPLIST_FILE = CollectifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noahjwoodward.CollectifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collectify.app/Collectify";
+			};
+			name = Debug;
+		};
+		7AF8A3E722711C97009CE93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBGPXWFD5T;
+				INFOPLIST_FILE = CollectifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noahjwoodward.CollectifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collectify.app/Collectify";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -550,6 +668,15 @@
 			buildConfigurations = (
 				7AB327EB224D2F81000CDFB5 /* Debug */,
 				7AB327EC224D2F81000CDFB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AF8A3E822711C97009CE93E /* Build configuration list for PBXNativeTarget "CollectifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AF8A3E622711C97009CE93E /* Debug */,
+				7AF8A3E722711C97009CE93E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
