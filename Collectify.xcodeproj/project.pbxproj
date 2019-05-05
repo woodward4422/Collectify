@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4C9F32E10825F49B48C7D5AC /* Pods_Collectify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CF9D2A59C011916E2B390 /* Pods_Collectify.framework */; };
+		7A036E27227E6E3300839E2E /* FunctionalTableData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A036E26227E6E3300839E2E /* FunctionalTableData.framework */; };
+		7A036E2A227E71D700839E2E /* CombinedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A036E29227E71D700839E2E /* CombinedView.swift */; };
+		7A036E2D227E73C400839E2E /* CombinedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A036E2C227E73C400839E2E /* CombinedState.swift */; };
+		7A036E31227E77A900839E2E /* CollectionImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A036E30227E77A900839E2E /* CollectionImages.swift */; };
+		7A036E35227E7D7600839E2E /* LabelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A036E34227E7D7600839E2E /* LabelState.swift */; };
 		7A29C1BC224D73690069D362 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1BB224D73690069D362 /* Route.swift */; };
 		7A29C1BE224D74BB0069D362 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1BD224D74BB0069D362 /* APIError.swift */; };
 		7A29C1C3224DA5010069D362 /* CustomCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1C2224DA5010069D362 /* CustomCollections.swift */; };
 		7A29C1E7224DAD490069D362 /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1E5224DAD490069D362 /* CollectionsViewController.swift */; };
-		7A29C1E8224DAD490069D362 /* CollectionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A29C1E6224DAD490069D362 /* CollectionsViewController.xib */; };
 		7A29C1EC224DB08E0069D362 /* CollectionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1EA224DB08E0069D362 /* CollectionsCollectionViewCell.swift */; };
 		7A29C1ED224DB08E0069D362 /* CollectionsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A29C1EB224DB08E0069D362 /* CollectionsCollectionViewCell.xib */; };
 		7A29C1F0224DE0B20069D362 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A29C1EE224DE0B20069D362 /* ProductsViewController.swift */; };
@@ -49,11 +53,15 @@
 /* Begin PBXFileReference section */
 		0D7AB79A8308D2D50DA53221 /* Pods-Collectify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collectify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Collectify/Pods-Collectify.release.xcconfig"; sourceTree = "<group>"; };
 		3C5B324CEADC2C051A9A5BA2 /* Pods-Collectify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collectify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Collectify/Pods-Collectify.debug.xcconfig"; sourceTree = "<group>"; };
+		7A036E26227E6E3300839E2E /* FunctionalTableData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FunctionalTableData.framework; path = Carthage/Build/iOS/FunctionalTableData.framework; sourceTree = "<group>"; };
+		7A036E29227E71D700839E2E /* CombinedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedView.swift; sourceTree = "<group>"; };
+		7A036E2C227E73C400839E2E /* CombinedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedState.swift; sourceTree = "<group>"; };
+		7A036E30227E77A900839E2E /* CollectionImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionImages.swift; sourceTree = "<group>"; };
+		7A036E34227E7D7600839E2E /* LabelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelState.swift; sourceTree = "<group>"; };
 		7A29C1BB224D73690069D362 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		7A29C1BD224D74BB0069D362 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		7A29C1C2224DA5010069D362 /* CustomCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollections.swift; sourceTree = "<group>"; };
 		7A29C1E5224DAD490069D362 /* CollectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
-		7A29C1E6224DAD490069D362 /* CollectionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionsViewController.xib; sourceTree = "<group>"; };
 		7A29C1EA224DB08E0069D362 /* CollectionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7A29C1EB224DB08E0069D362 /* CollectionsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionsCollectionViewCell.xib; sourceTree = "<group>"; };
 		7A29C1EE224DE0B20069D362 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C9F32E10825F49B48C7D5AC /* Pods_Collectify.framework in Frameworks */,
+				7A036E27227E6E3300839E2E /* FunctionalTableData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +113,7 @@
 		0215E85A82FC64215A9F2DA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A036E26227E6E3300839E2E /* FunctionalTableData.framework */,
 				CE2CF9D2A59C011916E2B390 /* Pods_Collectify.framework */,
 			);
 			name = Frameworks;
@@ -116,6 +126,31 @@
 				0D7AB79A8308D2D50DA53221 /* Pods-Collectify.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A036E28227E71A000839E2E /* CombinedView */ = {
+			isa = PBXGroup;
+			children = (
+				7A036E29227E71D700839E2E /* CombinedView.swift */,
+				7A036E2C227E73C400839E2E /* CombinedState.swift */,
+			);
+			path = CombinedView;
+			sourceTree = "<group>";
+		};
+		7A036E32227E7D4600839E2E /* LabelView */ = {
+			isa = PBXGroup;
+			children = (
+				7A036E34227E7D7600839E2E /* LabelState.swift */,
+			);
+			path = LabelView;
+			sourceTree = "<group>";
+		};
+		7A036E33227E7D5E00839E2E /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				7A036E30227E77A900839E2E /* CollectionImages.swift */,
+			);
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 		7A29C1BA224D73570069D362 /* Helpers */ = {
@@ -192,8 +227,10 @@
 		7AB327EE224D30C2000CDFB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A036E33227E7D5E00839E2E /* ImageView */,
+				7A036E32227E7D4600839E2E /* LabelView */,
+				7A036E28227E71A000839E2E /* CombinedView */,
 				7A29C1E9224DB03E0069D362 /* Cells */,
-				7A29C1E6224DAD490069D362 /* CollectionsViewController.xib */,
 				7A29C1EF224DE0B20069D362 /* ProductsViewController.xib */,
 			);
 			path = View;
@@ -241,6 +278,7 @@
 				7AB327D3224D2F7E000CDFB5 /* Resources */,
 				FD3EA0E6CA1C00F3F8FEAAD0 /* [CP] Embed Pods Frameworks */,
 				9BBE1D1B9B60874114A5CC0F /* [CP] Copy Pods Resources */,
+				7A036E25227E6D8C00839E2E /* Cathage-Copy-Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,7 +355,6 @@
 				7A29C1FD224EBD410069D362 /* CollectHeaderCollectionViewCell.xib in Resources */,
 				7A29C1F9224EBAF60069D362 /* ProductCollectionViewCell.xib in Resources */,
 				7AB327E3224D2F81000CDFB5 /* Assets.xcassets in Resources */,
-				7A29C1E8224DAD490069D362 /* CollectionsViewController.xib in Resources */,
 				7A29C1F1224DE0B20069D362 /* ProductsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +390,26 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		7A036E25227E6D8C00839E2E /* Cathage-Copy-Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FunctionalTableData.framework",
+			);
+			name = "Cathage-Copy-Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/FunctionalTableData.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 		9BBE1D1B9B60874114A5CC0F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -412,15 +469,19 @@
 				7A29C1EC224DB08E0069D362 /* CollectionsCollectionViewCell.swift in Sources */,
 				7AB327F3224D3B00000CDFB5 /* CollectionImage.swift in Sources */,
 				7A29C1F0224DE0B20069D362 /* ProductsViewController.swift in Sources */,
+				7A036E31227E77A900839E2E /* CollectionImages.swift in Sources */,
 				7ABDC53E224EDD54009F8A55 /* AlertPresent.swift in Sources */,
 				7A29C1C3224DA5010069D362 /* CustomCollections.swift in Sources */,
 				7AB327D9224D2F7E000CDFB5 /* AppDelegate.swift in Sources */,
 				7AB6764B224D3E6700DB9ECB /* CustomCollectionService.swift in Sources */,
+				7A036E2A227E71D700839E2E /* CombinedView.swift in Sources */,
 				7A29C1FC224EBD410069D362 /* CollectHeaderCollectionViewCell.swift in Sources */,
 				7A29C1BE224D74BB0069D362 /* APIError.swift in Sources */,
+				7A036E35227E7D7600839E2E /* LabelState.swift in Sources */,
 				7AF7150522650DE500C5BF3B /* CustomCollectionMock.swift in Sources */,
 				7A29C1BC224D73690069D362 /* Route.swift in Sources */,
 				7A29C1F3224E81790069D362 /* Collect.swift in Sources */,
+				7A036E2D227E73C400839E2E /* CombinedState.swift in Sources */,
 				7AF7150322650CDD00C5BF3B /* CustomCollectionNetworkLayer.swift in Sources */,
 				7AB327F1224D30F8000CDFB5 /* CustomCollection.swift in Sources */,
 				7A29C1F5224E90CC0069D362 /* Product.swift in Sources */,
@@ -580,6 +641,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QBGPXWFD5T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Collectify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -599,6 +664,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QBGPXWFD5T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Collectify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

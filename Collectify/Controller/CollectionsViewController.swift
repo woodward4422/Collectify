@@ -7,54 +7,69 @@
 //
 
 import UIKit
+import FunctionalTableData
+import Kingfisher
 
-class CollectionsViewController: UIViewController {
+class CollectionsViewController: UITableViewController {
     // MARK: VARS
-    var collectionService: CustomCollectionNetworkLayer
+    var collectionService: CustomCollectionNetworkLayer!
     private var collections: CustomCollections?
-    
-    @IBOutlet weak var collectionView: UICollectionView!
-    
-    // MARK: INITIALIZER
-    init(service: CustomCollectionNetworkLayer){
-        self.collectionService = service
-        super.init(nibName: "CollectionsViewController", bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+    private let functionalData = FunctionalTableData()
+    private let dpg = DispatchGroup()
     
     // MARK: METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCollectionView()
+        functionalData.tableView = tableView
         loadData()
         navSetup()
+        dpg.notify(queue: .main) {
+            self.render()
+        }
+
     }
     
-    
-    
-    private func setupCollectionView(){
-        self.collectionView.register(UINib(nibName: "CollectionsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionCell")
-        
-        let collectionViewLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        
-        collectionViewLayout.itemSize = UICollectionViewFlowLayout.automaticSize
-        collectionViewLayout.estimatedItemSize = CGSize(width: view.frame.width, height: 100)
-        
+    private func render() {
+        functionalData.renderAndDiff([
+            collectionTableSection(key: "collection.section")])
     }
     
+    private func collectionTableSection(key: String) -> TableSection {
+        typealias CollectionCell = HostCell<CombinedView<UIImageView,UILabel>, CombinedState<ImageState,LabelState>, LayoutMarginsTableItemLayout>
+        let rows = getCells()
+        return TableSection(key: key, rows: rows, header: nil, footer: nil, style: SectionStyle(separators: .topAndBottom), didMoveRow: nil)
+    }
+    
+    private func getCells() -> [CellConfigType] {
+        var rows: [CellConfigType] = []
+        var counter = 1
+        typealias CollectionCell = HostCell<CombinedView<UIImageView,UILabel>, CombinedState<ImageState,LabelState>, LayoutMarginsTableItemLayout>
+        for collection in (collections?.collections)! {
+            let imageState = ImageState(url: URL(string: collection.image.image)!, width: 50.0, height: 50.0)
+            let titleState = LabelState(title: collection.title, color: .black, alignment: .left)
+           let cell =  CollectionCell(key: "collection.row\(counter)", state: CombinedState(state1: imageState, state2: titleState), cellUpdater: { (view,state) in
+                view.stackView.spacing = 16
+                
+                ImageState.updateView(view.view1, state: state?.state1)
+                LabelState.updateView(view.view2, state: state?.state2)
+            })
+            rows.append(cell)
+            counter += 1
+        }
+        
+        return rows
+    }
     
     private func loadData(){
+        dpg.enter()
         self.collectionService.getAllCollections(route: .customCollection) { (result) in
             switch result{
             case .success(let collections):
                 self.collections = collections
-                self.collectionView.reloadData()
+                self.dpg.leave()
             case .failure(let error):
                 print(error.localizedDescription)
+                self.dpg.leave()
             }
         }
     }
@@ -91,36 +106,36 @@ class CollectionsViewController: UIViewController {
 }
 
 
-extension CollectionsViewController: UICollectionViewDelegate, UICollectionViewDataSource{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        // Could have done this a shorter way with ?? but I thought this was cleaner for readability due to nested models
-        if let unwrappedCollections = collections{
-            return unwrappedCollections.collections.count
-        } else{
-            return 0
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! CollectionsCollectionViewCell
-        let collection = collections?.collections[indexPath.row]
-        cell.collection = collection
-        return cell
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // TODO: Present an alert for error handling here
-        guard let collectionsUnwrapped = collections?.collections else {
-            self.presentAlert(errorMessage: "There are no collections at this time, try again later!")
-            return
-        }
-        let id = String(collectionsUnwrapped[indexPath.row].id)
-        transitionToNext(id: id, collection: collectionsUnwrapped[indexPath.row])
-        
-        
-    }
-    
-    
-}
+//extension CollectionsViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//
+//        // Could have done this a shorter way with ?? but I thought this was cleaner for readability due to nested models
+//        if let unwrappedCollections = collections{
+//            return unwrappedCollections.collections.count
+//        } else{
+//            return 0
+//        }
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! CollectionsCollectionViewCell
+//        let collection = collections?.collections[indexPath.row]
+//        cell.collection = collection
+//        return cell
+//    }
+//
+//
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        // TODO: Present an alert for error handling here
+//        guard let collectionsUnwrapped = collections?.collections else {
+//            self.presentAlert(errorMessage: "There are no collections at this time, try again later!")
+//            return
+//        }
+//        let id = String(collectionsUnwrapped[indexPath.row].id)
+//        transitionToNext(id: id, collection: collectionsUnwrapped[indexPath.row])
+//
+//
+//    }
+//
+//
+//}

@@ -19,8 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
+        let rootVC = CollectionsViewController()
+        rootVC.collectionService = CustomCollectionService()
+        self.window!.rootViewController = UINavigationController(rootViewController: rootVC)
         
-        self.window!.rootViewController = UINavigationController(rootViewController: CollectionsViewController(service: CustomCollectionService()))
         
         self.window!.makeKeyAndVisible()
         
