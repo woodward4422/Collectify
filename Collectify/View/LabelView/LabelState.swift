@@ -31,7 +31,8 @@ public struct LabelState: Equatable {
         guard let state = state else {
             return
         }
-        
+        view.lineBreakMode = .byWordWrapping
+        view.numberOfLines = 0
         view.text = state.title
         view.textColor = state.color
         view.textAlignment = state.alignment
