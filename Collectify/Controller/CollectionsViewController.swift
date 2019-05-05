@@ -45,8 +45,8 @@ class CollectionsViewController: UITableViewController {
         var counter = 1
         typealias CollectionCell = HostCell<CombinedView<UIImageView,UILabel>, CombinedState<ImageState,LabelState>, LayoutMarginsTableItemLayout>
         for collection in (collections?.collections)! {
-            let imageState = ImageState(url: URL(string: collection.image.image)!, width: 50.0, height: 50.0)
-            let titleState = LabelState(title: collection.title, color: .black, alignment: .left)
+            let imageState = ImageState(url: URL(string: collection.image.image)!, width: 100.0, height: 100.0)
+            let titleState = LabelState(title: collection.title, color: .white, alignment: .left)
            let cell =  CollectionCell(key: "collection.row\(counter)", state: CombinedState(state1: imageState, state2: titleState), cellUpdater: { (view,state) in
                 view.stackView.spacing = 16
                 
@@ -100,42 +100,4 @@ class CollectionsViewController: UITableViewController {
         }
         
     }
-    
-    
-    
 }
-
-
-//extension CollectionsViewController: UICollectionViewDelegate, UICollectionViewDataSource{
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//
-//        // Could have done this a shorter way with ?? but I thought this was cleaner for readability due to nested models
-//        if let unwrappedCollections = collections{
-//            return unwrappedCollections.collections.count
-//        } else{
-//            return 0
-//        }
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! CollectionsCollectionViewCell
-//        let collection = collections?.collections[indexPath.row]
-//        cell.collection = collection
-//        return cell
-//    }
-//
-//
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        // TODO: Present an alert for error handling here
-//        guard let collectionsUnwrapped = collections?.collections else {
-//            self.presentAlert(errorMessage: "There are no collections at this time, try again later!")
-//            return
-//        }
-//        let id = String(collectionsUnwrapped[indexPath.row].id)
-//        transitionToNext(id: id, collection: collectionsUnwrapped[indexPath.row])
-//
-//
-//    }
-//
-//
-//}

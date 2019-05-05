@@ -20,7 +20,9 @@ public class CombinedView<View1: UIView, View2: UIView>: UIView {
         super.init(frame: frame)
         stackView.addArrangedSubview(view1)
         stackView.addArrangedSubview(view2)
-        
+        self.backgroundColor = UIColor.shopGreen
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 8
         stackView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(stackView)
         
